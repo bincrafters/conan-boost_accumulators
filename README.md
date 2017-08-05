@@ -2,7 +2,7 @@
 
 [Conan.io](https://conan.io) package for [Boost.Accumulators](https://github.com/Boostorg/Accumulators) project
 
-The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/conan-public/Boost.Accumulators%3Abincrafters).
+The packages generated with this **conanfile** can be found in [Bintray](https://bintray.com/bincrafters/public-conan/Boost.Accumulators%3Abincrafters).
 
 ## For Users: Use this package
 
