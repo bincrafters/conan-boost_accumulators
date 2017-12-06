@@ -6,6 +6,7 @@ class BoostAccumulatorsConan(ConanFile):
     version = "1.65.1"
 
     requires = \
+        "Boost.Generator/1.65.1@bincrafters/testing", \
         "Boost.Array/1.65.1@bincrafters/testing", \
         "Boost.Assert/1.65.1@bincrafters/testing", \
         "Boost.Circular_Buffer/1.65.1@bincrafters/testing", \
@@ -32,23 +33,22 @@ class BoostAccumulatorsConan(ConanFile):
     # BEGIN
 
     url = "https://github.com/bincrafters/conan-boost-accumulators"
-    description = "Please visit http://www.boost.org/doc/libs/1_65_1/libs/libraries.htm"
+    description = "Please visit http://www.boost.org/doc/libs/1_65_1"
     license = "www.boost.org/users/license.html"
     short_paths = True
     build_requires = "Boost.Generator/1.65.1@bincrafters/testing"
-
-    def package_id(self):
-        if self.is_header_only:
-            self.info.header_only()
 
     @property
     def env(self):
         try:
             with tools.pythonpath(super(self.__class__, self)):
-                import boostgenerator # pylint: disable=F0401
+                import boostgenerator  # pylint: disable=F0401
                 boostgenerator.BoostConanFile(self)
         except:
             pass
         return super(self.__class__, self).env
+
+    def package_id(self):
+        self.info.header_only()
 
     # END
