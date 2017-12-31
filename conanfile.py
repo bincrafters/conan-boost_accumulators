@@ -7,7 +7,7 @@ from conans import ConanFile, tools
 class BoostAccumulatorsConan(ConanFile):
     name = "boost_accumulators"
     version = "1.66.0"
-    url = "https://github.com/bincrafters/conan-boost-accumulators"
+    url = "https://github.com/bincrafters/conan-boost_accumulators"
 
     lib_short_names = ["accumulators"]
     is_header_only = True
