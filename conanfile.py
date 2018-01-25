@@ -8,7 +8,8 @@ class BoostAccumulatorsConan(ConanFile):
     name = "boost_accumulators"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_accumulators"
-
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["accumulators"]
     is_header_only = True
 
