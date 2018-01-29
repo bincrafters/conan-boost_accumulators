@@ -8,7 +8,8 @@ class BoostAccumulatorsConan(ConanFile):
     name = "boost_accumulators"
     version = "1.66.0"
     url = "https://github.com/bincrafters/conan-boost_accumulators"
-
+    author = "Bincrafters <bincrafters@gmail.com>"
+    exports = ["LICENSE.md"]
     lib_short_names = ["accumulators"]
     is_header_only = True
 
@@ -16,26 +17,26 @@ class BoostAccumulatorsConan(ConanFile):
         self.info.header_only()
 
     requires = (
-        "boost_package_tools/1.66.0@bincrafters/testing",
-        "boost_array/1.66.0@bincrafters/testing",
-        "boost_assert/1.66.0@bincrafters/testing",
-        "boost_circular_buffer/1.66.0@bincrafters/testing",
-        "boost_concept_check/1.66.0@bincrafters/testing",
-        "boost_config/1.66.0@bincrafters/testing",
-        "boost_core/1.66.0@bincrafters/testing",
-        "boost_fusion/1.66.0@bincrafters/testing",
-        "boost_iterator/1.66.0@bincrafters/testing",
-        "boost_mpl/1.66.0@bincrafters/testing",
-        "boost_numeric_conversion/1.66.0@bincrafters/testing",
-        "boost_numeric_ublas/1.66.0@bincrafters/testing",
-        "boost_parameter/1.66.0@bincrafters/testing",
-        "boost_preprocessor/1.66.0@bincrafters/testing",
-        "boost_range/1.66.0@bincrafters/testing",
-        "boost_static_assert/1.66.0@bincrafters/testing",
-        "boost_throw_exception/1.66.0@bincrafters/testing",
-        "boost_tuple/1.66.0@bincrafters/testing",
-        "boost_type_traits/1.66.0@bincrafters/testing",
-        "boost_typeof/1.66.0@bincrafters/testing"
+        "boost_package_tools/1.66.0@bincrafters/stable",
+        "boost_array/1.66.0@bincrafters/stable",
+        "boost_assert/1.66.0@bincrafters/stable",
+        "boost_circular_buffer/1.66.0@bincrafters/stable",
+        "boost_concept_check/1.66.0@bincrafters/stable",
+        "boost_config/1.66.0@bincrafters/stable",
+        "boost_core/1.66.0@bincrafters/stable",
+        "boost_fusion/1.66.0@bincrafters/stable",
+        "boost_iterator/1.66.0@bincrafters/stable",
+        "boost_mpl/1.66.0@bincrafters/stable",
+        "boost_numeric_conversion/1.66.0@bincrafters/stable",
+        "boost_numeric_ublas/1.66.0@bincrafters/stable",
+        "boost_parameter/1.66.0@bincrafters/stable",
+        "boost_preprocessor/1.66.0@bincrafters/stable",
+        "boost_range/1.66.0@bincrafters/stable",
+        "boost_static_assert/1.66.0@bincrafters/stable",
+        "boost_throw_exception/1.66.0@bincrafters/stable",
+        "boost_tuple/1.66.0@bincrafters/stable",
+        "boost_type_traits/1.66.0@bincrafters/stable",
+        "boost_typeof/1.66.0@bincrafters/stable"
     )
     
     
@@ -44,7 +45,7 @@ class BoostAccumulatorsConan(ConanFile):
     description = "Please visit http://www.boost.org/doc/libs/1_66_0"
     license = "BSL-1.0"
     short_paths = True
-    build_requires = "boost_generator/1.66.0@bincrafters/testing"
+    build_requires = "boost_generator/1.66.0@bincrafters/stable"
 
     def package_id(self):
         getattr(self, "package_id_additional", lambda:None)()
