@@ -8,6 +8,7 @@ base = python_requires("boost_base/1.69.0@bincrafters/stable")
 
 class BoostAccumulatorsConan(base.BoostBaseConan):
     name = "boost_accumulators"
+    version = "1.69.0"
     url = "https://github.com/bincrafters/conan-boost_accumulators"
     lib_short_names = ["accumulators"]
     header_only_libs = ["accumulators"]
